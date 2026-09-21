@@ -119,10 +119,10 @@ wd_getdir()
 
     if [[ -z $name_arg ]]; then
         wd_exit_fail "You must enter a warp point"
-        break
+        return 1
     elif [[ -z $dir ]]; then
         wd_exit_fail "Unknown warp point '${name_arg}'"
-        break
+        return 1
     fi
 }
 
