@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  omz-test:
+    build: .
+    command: zsh tests/run_tests.sh
+    volumes:
+      - .:/app
+    environment:
+      - TERM=xterm-256color

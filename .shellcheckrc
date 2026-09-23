@@ -1,0 +1,4 @@
+# ShellCheck configuration for Oh My Zsh
+disable=SC2034,SC2154,SC1090,SC2164,SC2296,SC2206
+shell=bash
+external-sources=true
